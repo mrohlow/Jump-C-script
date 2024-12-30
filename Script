@@ -1,0 +1,20 @@
+using JetBrains.Annotations;
+using UnityEngine;
+
+public class Jump : MonoBehaviour
+{
+
+    public float jumpForce;
+    public int jumpNumber , jumpCount = 0;
+         public Rigidbody rb;
+
+     void Update()
+    {
+       if (Input.GetKeyDown(KeyCode.Space))
+    {
+
+        rb.AddForce(Vector3.up * 200);
+    } 
+    }
+
+}
